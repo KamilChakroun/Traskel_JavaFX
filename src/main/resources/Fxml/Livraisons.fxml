@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="581.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pi.traskel.LivraisonController">
+   <children>
+      <VBox layoutX="39.0" layoutY="125.0" prefHeight="200.0" prefWidth="148.0" spacing="15.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir :" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Commande" />
+            <ComboBox fx:id="commandeCB" prefWidth="150.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Livreur" />
+            <ComboBox fx:id="livreurCB" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <TableView fx:id="table" layoutX="210.0" layoutY="96.0" prefHeight="390.0" prefWidth="631.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="36.800048828125" text="ID" />
+          <TableColumn fx:id="colCMD" prefWidth="408.8000183105469" text="Commande">
+               <columns>
+                  <TableColumn fx:id="colADR" prefWidth="220.0" text="adresse" />
+                  <TableColumn fx:id="colSTATUT" prefWidth="127.20004272460938" text="statut" />
+                  <TableColumn fx:id="colDELAI" prefWidth="95.2000732421875" text="delai" />
+               </columns></TableColumn>
+            <TableColumn fx:id="colLIV" prefWidth="147.2000732421875" text="Livreur" />
+        </columns>
+      </TableView>
+      <Label fx:id="mainLabel" alignment="CENTER" layoutX="283.0" layoutY="33.0" prefHeight="34.0" prefWidth="201.0" text="CRUD LIVRAISONS" />
+      <ButtonBar layoutX="14.0" layoutY="325.0" prefHeight="26.0" prefWidth="148.0">
+        <buttons>
+          <Button fx:id="ajouterBtn" alignment="CENTER" mnemonicParsing="false" onAction="#ajouterLivraison" text="Ajouter" />
+          <Button fx:id="supprimerBtn" mnemonicParsing="false" onAction="#supprimerLivraison" text="Supprimer" />
+        </buttons>
+      </ButtonBar>
+      <Button fx:id="updateBtn" layoutX="82.0" layoutY="382.0" mnemonicParsing="false" onAction="#updateLivraison" text="Modifier" />
+   </children>
+</AnchorPane>
