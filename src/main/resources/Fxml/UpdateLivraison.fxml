@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pi.traskel.UpdateLivController">
    <children>
       <VBox layoutX="31.2" layoutY="83.0" prefHeight="274.0" prefWidth="198.0" spacing="12.0" AnchorPane.leftAnchor="31.0">
@@ -39,11 +38,6 @@
          </font>
       </Label>
       <Button fx:id="confirmBtn" layoutX="527.0" layoutY="163.0" mnemonicParsing="false" onAction="#confirmUpdate" prefHeight="46.0" prefWidth="102.0" text="Appliquer" />
-      <TextField fx:id="searchField" layoutX="362.0" layoutY="65.0" />
-      <Label layoutX="267.0" layoutY="68.0" text="Chercher Livreur">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
+      <TextField fx:id="searchField" layoutX="266.0" layoutY="65.0" prefHeight="26.0" prefWidth="246.0" promptText="Chercher par nom.." />
    </children>
 </AnchorPane>

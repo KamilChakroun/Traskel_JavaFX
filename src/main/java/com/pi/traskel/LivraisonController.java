@@ -15,6 +15,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -63,6 +64,9 @@ public class LivraisonController implements Initializable {
 
     @FXML
     private Label mainLabel;
+
+    @FXML
+    private Label errorLabel;
 
     @FXML
     private TableView<Livraison> table;
@@ -274,12 +278,27 @@ public class LivraisonController implements Initializable {
 
                 st.executeUpdate();
 
+                updateCommandeStatus(selectedCommande.getId(), "en cours");
+
                 afficherLivraisons();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
         } else {
-            System.out.println("Please select both a Commande and a Livreur.");
+            errorLabel.setText("il faut selectioner une Commande et un Livreur!");
+            errorLabel.setTextFill(Color.RED);
+        }
+    }
+
+    private void updateCommandeStatus(int commandeId, String newStatus) {
+        String query = "UPDATE commande SET statut = ? WHERE id = ?";
+        try {
+            st = con.prepareStatement(query);
+            st.setString(1, newStatus);
+            st.setInt(2, commandeId);
+            st.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -298,7 +317,6 @@ public class LivraisonController implements Initializable {
                 stage.setScene(new Scene(root1));
 
                 stage.setOnHidden(e -> {
-                    // Update the table view after the window is closed
                     afficherLivraisons();
                 });
 
@@ -307,7 +325,8 @@ public class LivraisonController implements Initializable {
                 System.out.println("Can't load new window");
             }
         } else {
-            System.out.println("Please select a Livraison to update.");
+            errorLabel.setText("il faut selectioner une ligne pour le modifier!");
+            errorLabel.setTextFill(Color.RED);
         }
     }
 
@@ -332,7 +351,8 @@ public class LivraisonController implements Initializable {
                 throw new RuntimeException(e);
             }
         } else {
-            System.out.println("Please select a Livraison to delete.");
+            errorLabel.setText("il faut selectioner une ligne pour le supprimer!");
+            errorLabel.setTextFill(Color.RED);
         }
     }
 

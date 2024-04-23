@@ -4,30 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a3bd333-ee71-43b1-bd18-7a87f50cea66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/Commande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/Livraison.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/Panier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/UpdateLivController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Livraisons.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/UpdateLivraison.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script.sql" afterDir="false" />
+    <list default="true" id="2a3bd333-ee71-43b1-bd18-7a87f50cea66" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Livraisons.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Livraisons.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/UpdateLivraison.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/UpdateLivraison.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +65,20 @@
       <workItem from="1712052680512" duration="238000" />
       <workItem from="1712688495534" duration="8751000" />
       <workItem from="1712697815263" duration="1000" />
+      <workItem from="1713252682233" duration="177000" />
+      <workItem from="1713428203562" duration="234000" />
+      <workItem from="1713843425554" duration="2615000" />
+      <workItem from="1713859713349" duration="301000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <option name="closed" value="true" />
+      <created>1713252806562</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713252806562</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +94,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

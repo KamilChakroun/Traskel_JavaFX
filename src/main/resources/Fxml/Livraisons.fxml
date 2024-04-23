@@ -40,6 +40,7 @@
           <Button fx:id="supprimerBtn" mnemonicParsing="false" onAction="#supprimerLivraison" text="Supprimer" />
         </buttons>
       </ButtonBar>
-      <Button fx:id="updateBtn" layoutX="82.0" layoutY="382.0" mnemonicParsing="false" onAction="#updateLivraison" text="Modifier" />
+      <Button fx:id="updateBtn" layoutX="80.0" layoutY="397.0" mnemonicParsing="false" onAction="#updateLivraison" text="Modifier" />
+      <Label fx:id="errorLabel" layoutX="14.0" layoutY="351.0" prefHeight="46.0" prefWidth="182.0" wrapText="true" />
    </children>
 </AnchorPane>
