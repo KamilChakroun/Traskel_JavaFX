@@ -3,6 +3,7 @@ module com.pi.traskel {
     requires javafx.fxml;
     requires mysql.connector.j;
     requires java.sql;
+    requires java.mail;
 
 
     opens com.pi.traskel to javafx.fxml;

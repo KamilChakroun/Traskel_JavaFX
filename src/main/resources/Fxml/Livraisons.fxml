@@ -8,9 +8,10 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="581.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pi.traskel.LivraisonController">
+<AnchorPane prefHeight="581.0" prefWidth="861.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pi.traskel.LivraisonController">
    <children>
       <VBox layoutX="39.0" layoutY="125.0" prefHeight="200.0" prefWidth="148.0" spacing="15.0">
          <children>
@@ -21,7 +22,7 @@
             <ComboBox fx:id="livreurCB" prefWidth="150.0" />
          </children>
       </VBox>
-      <TableView fx:id="table" layoutX="210.0" layoutY="96.0" prefHeight="390.0" prefWidth="631.0">
+      <TableView fx:id="table" layoutX="229.0" layoutY="95.0" prefHeight="390.0" prefWidth="631.0">
         <columns>
           <TableColumn fx:id="colID" prefWidth="36.800048828125" text="ID" />
           <TableColumn fx:id="colCMD" prefWidth="408.8000183105469" text="Commande">
@@ -33,14 +34,17 @@
             <TableColumn fx:id="colLIV" prefWidth="147.2000732421875" text="Livreur" />
         </columns>
       </TableView>
-      <Label fx:id="mainLabel" alignment="CENTER" layoutX="283.0" layoutY="33.0" prefHeight="34.0" prefWidth="201.0" text="CRUD LIVRAISONS" />
-      <ButtonBar layoutX="14.0" layoutY="325.0" prefHeight="26.0" prefWidth="148.0">
+      <Label fx:id="mainLabel" alignment="CENTER" layoutX="283.0" layoutY="33.0" prefHeight="35.0" prefWidth="302.0" text="LIVRAISONS PRODUITS">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <ButtonBar layoutY="332.0" prefHeight="38.0" prefWidth="192.0">
         <buttons>
-          <Button fx:id="ajouterBtn" alignment="CENTER" mnemonicParsing="false" onAction="#ajouterLivraison" text="Ajouter" />
-          <Button fx:id="supprimerBtn" mnemonicParsing="false" onAction="#supprimerLivraison" text="Supprimer" />
+          <Button fx:id="ajouterBtn" alignment="CENTER" minWidth="66.0" mnemonicParsing="false" onAction="#ajouterLivraison" prefHeight="38.0" text="Ajouter" />
+          <Button fx:id="supprimerBtn" mnemonicParsing="false" onAction="#supprimerLivraison" prefHeight="44.0" text="Supprimer" />
         </buttons>
       </ButtonBar>
-      <Button fx:id="updateBtn" layoutX="80.0" layoutY="397.0" mnemonicParsing="false" onAction="#updateLivraison" text="Modifier" />
+      <Button fx:id="updateBtn" layoutX="71.0" layoutY="397.0" mnemonicParsing="false" onAction="#updateLivraison" prefHeight="38.0" prefWidth="83.0" text="Modifier" />
       <Label fx:id="errorLabel" layoutX="14.0" layoutY="351.0" prefHeight="46.0" prefWidth="182.0" wrapText="true" />
    </children>
 </AnchorPane>

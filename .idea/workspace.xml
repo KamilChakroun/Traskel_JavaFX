@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a3bd333-ee71-43b1-bd18-7a87f50cea66" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/Cadeau.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/CommandeCad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonCadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonCadeau.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/LivraisonsCadeaux.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Livraisons.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Livraisons.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/UpdateLivraison.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/UpdateLivraison.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +50,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL/IdeaProjects/Traskel/src/main/resources/Fxml&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -51,6 +59,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\IdeaProjects\Traskel\src\main\resources\Fxml" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +81,10 @@
       <workItem from="1713252682233" duration="177000" />
       <workItem from="1713428203562" duration="234000" />
       <workItem from="1713843425554" duration="2615000" />
-      <workItem from="1713859713349" duration="301000" />
+      <workItem from="1713859713349" duration="1767000" />
+      <workItem from="1714245292034" duration="1306000" />
+      <workItem from="1714417292848" duration="3731000" />
+      <workItem from="1714425872651" duration="9708000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -78,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713252806562</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".">
+      <option name="closed" value="true" />
+      <created>1713860045747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713860045747</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

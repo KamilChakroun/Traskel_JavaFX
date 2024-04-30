@@ -278,17 +278,30 @@ public class LivraisonController implements Initializable {
 
                 st.executeUpdate();
 
-                updateCommandeStatus(selectedCommande.getId(), "en cours");
+                updateCommandeStatus(selectedCommande.getId(), "en Cours");
+
+                String recipientEmail = selectedLivreur.getEmail();
+                String subject = "Demande de Livraison";
+                String body = "<html><body style=\"font-family: Arial, sans-serif; font-size: 14px;\">" +
+                        "<p style=\"color: #333;\">Cher " + selectedLivreur.getNom() + ",</p>" +
+                        "<p style=\"color: #333;\">Vous avez reçu une nouvelle demande de livraison.</p>" +
+                        "<p style=\"color: #333;\">Details Livraison:</p>" +
+                        "<ul>" +
+                        "<li>Commande ID: " + selectedCommande.getId() + "</li>" +
+                        "<li>Livreur: " + selectedLivreur.getNom() + " " + selectedLivreur.getPrenom() + "</li>" +
+                        "</ul></body></html>";
+                EmailSender.sendEmail("Traskel",recipientEmail, subject, body);
 
                 afficherLivraisons();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
         } else {
-            errorLabel.setText("il faut selectioner une Commande et un Livreur!");
+            errorLabel.setText("Il faut selectioner une Commande et un Livreur!");
             errorLabel.setTextFill(Color.RED);
         }
     }
+
 
     private void updateCommandeStatus(int commandeId, String newStatus) {
         String query = "UPDATE commande SET statut = ? WHERE id = ?";
@@ -325,7 +338,7 @@ public class LivraisonController implements Initializable {
                 System.out.println("Can't load new window");
             }
         } else {
-            errorLabel.setText("il faut selectioner une ligne pour le modifier!");
+            errorLabel.setText("Il faut selectioner une ligne pour le modifier!");
             errorLabel.setTextFill(Color.RED);
         }
     }
@@ -351,7 +364,7 @@ public class LivraisonController implements Initializable {
                 throw new RuntimeException(e);
             }
         } else {
-            errorLabel.setText("il faut selectioner une ligne pour le supprimer!");
+            errorLabel.setText("Il faut selectioner une ligne pour le supprimer!");
             errorLabel.setTextFill(Color.RED);
         }
     }
