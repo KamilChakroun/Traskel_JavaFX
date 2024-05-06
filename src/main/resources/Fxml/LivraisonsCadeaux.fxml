@@ -14,10 +14,11 @@
                 <Font name="System Bold" size="24.0" />
             </font></Label>
         <ButtonBar layoutY="332.0" prefHeight="38.0" prefWidth="192.0" />
-      <TableView layoutX="76.0" layoutY="91.0" prefHeight="426.0" prefWidth="709.0">
+      <TableView fx:id="tableLivCad" layoutX="76.0" layoutY="91.0" prefHeight="426.0" prefWidth="709.0">
         <columns>
-          <TableColumn prefWidth="221.5999984741211" text="Membre" />
-          <TableColumn minWidth="0.0" prefWidth="351.2000427246094" text="Cadeaux" />
+          <TableColumn fx:id="colMEMBRE" prefWidth="221.5999984741211" text="Membre" />
+          <TableColumn fx:id="colCADEAUX" minWidth="0.0" prefWidth="339.1999816894531" text="Cadeaux" />
+            <TableColumn fx:id="colLIVREUR" prefWidth="146.4000244140625" />
         </columns>
       </TableView>
     </children>

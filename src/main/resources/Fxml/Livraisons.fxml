@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="581.0" prefWidth="861.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pi.traskel.LivraisonController">
+<AnchorPane prefHeight="581.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pi.traskel.LivraisonController">
    <children>
       <VBox layoutX="39.0" layoutY="125.0" prefHeight="200.0" prefWidth="148.0" spacing="15.0">
          <children>

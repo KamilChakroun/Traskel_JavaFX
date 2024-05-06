@@ -2,6 +2,7 @@ package com.pi.traskel;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListCell;
@@ -39,6 +40,8 @@ public class UpdateLivController {
     @FXML
     private TextField searchField;
 
+    private FilteredList<User> filteredLivreurUsers;
+
     private Livraison livraison;
 
     public void setLivraison(Livraison livraison) {
@@ -68,8 +71,31 @@ public class UpdateLivController {
     }
 
     private void populateLivreurListView() {
-        ObservableList<User> livreurUsers = FXCollections.observableArrayList(getAllLivreurUsers());
-        livreurListView.setItems(livreurUsers);
+        // Create a FilteredList with all livreur users
+        List<User> allLivreurUsers = getAllLivreurUsers();
+        filteredLivreurUsers = new FilteredList<>(FXCollections.observableArrayList(allLivreurUsers), p -> true);
+
+        // Bind the FilteredList to the searchField's text property for real-time filtering
+        searchField.textProperty().addListener((observable, oldValue, newValue) -> {
+            filteredLivreurUsers.setPredicate(user -> {
+                if (newValue == null || newValue.isEmpty()) {
+                    return true; // Show all users if search field is empty
+                }
+
+                // Compare the search term with user's first name or last name
+                String lowerCaseFilter = newValue.toLowerCase();
+                if (user.getPrenom().toLowerCase().contains(lowerCaseFilter) || user.getNom().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; // Match found, show user
+                }
+
+                return false; // No match, hide user
+            });
+        });
+
+        // Set the filtered list to your ListView
+        livreurListView.setItems(filteredLivreurUsers);
+
+        // Set the cell factory
         livreurListView.setCellFactory(new Callback<ListView<User>, ListCell<User>>() {
             @Override
             public ListCell<User> call(ListView<User> listView) {
