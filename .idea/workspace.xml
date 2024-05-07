@@ -5,8 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a3bd333-ee71-43b1-bd18-7a87f50cea66" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/LivreurController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Livreur.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/1e5e310f-9a9a-44d2-996e-2ea66871d3f1imagee.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/1e5e310f-9a9a-44d2-996e-2ea66871d3f1imagee.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ben-affleck.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/ben-affleck.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/cat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/cat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/chart.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/chart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/eruro.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/eruro.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/flag.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/flag.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/group.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/group.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/heart_833472.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/heart_833472.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ic_usr.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/ic_usr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8-heart-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8-heart-50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Bill_50px_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Bill_50px_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Block_50px_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Block_50px_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Box_32px.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Box_32px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Broccoli_64px_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Broccoli_64px_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Car_52px_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Car_52px_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_GPS_Antenna_64px_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_GPS_Antenna_64px_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Home_32px.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Home_32px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Meanpath_64px_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Meanpath_64px_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Open_Envelope_32px.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Open_Envelope_32px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Person_32px.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Person_32px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Play_48px.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Play_48px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Play_Button_50px.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Play_Button_50px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Search_52px.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Search_52px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Shopping_Cart_50px_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Shopping_Cart_50px_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Sign_Out_32px.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Sign_Out_32px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Slider__32px.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Slider__32px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/icons8_Xbox_Menu_32px.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/icons8_Xbox_Menu_32px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/jimmy-fallon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/jimmy-fallon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/logo.avif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/logo.avif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/profile-adam-levine.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/profile-adam-levine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/profile-james-marsden.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/profile-james-marsden.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/red.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/red.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/time.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/time.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/transparent.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/transparent.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +127,7 @@
       <workItem from="1715006718921" duration="2902000" />
       <workItem from="1715027573983" duration="2052000" />
       <workItem from="1715038547506" duration="445000" />
-      <workItem from="1715039099708" duration="4165000" />
+      <workItem from="1715039099708" duration="4571000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -140,7 +177,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715042343073</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=".">
+      <option name="closed" value="true" />
+      <created>1715043344794</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715043344794</updated>
+    </task>
+    <task id="LOCAL-00008" summary=".">
+      <option name="closed" value="true" />
+      <created>1715043360267</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715043360267</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
