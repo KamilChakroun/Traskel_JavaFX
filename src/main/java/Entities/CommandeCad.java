@@ -1,4 +1,4 @@
-package com.pi.traskel;
+package Entities;
 
 import javafx.scene.control.Button;
 

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="581.0" prefWidth="861.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pi.traskel.LivraisonCadController">
+<AnchorPane prefHeight="581.0" prefWidth="861.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LivraisonCadController">
     <children>
         <Label fx:id="mainLabel" alignment="CENTER" layoutX="279.0" layoutY="35.0" prefHeight="35.0" prefWidth="302.0" text="LIVRAISONS CADEAUX">
             <font>

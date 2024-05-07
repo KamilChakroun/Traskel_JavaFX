@@ -1,4 +1,4 @@
-package com.pi.traskel;
+package Services;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Properties;

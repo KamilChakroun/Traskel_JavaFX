@@ -1,4 +1,4 @@
-package com.pi.traskel;
+package Entities;
 
 public class User {
     private int id;

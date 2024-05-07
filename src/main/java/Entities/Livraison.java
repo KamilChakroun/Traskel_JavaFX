@@ -1,11 +1,9 @@
-package com.pi.traskel;
+package Entities;
 
-import java.util.List;
-
-public class LivraisonCadeau {
+public class Livraison {
     private int id;
-    private CommandeCad cmdCad;
     private User livreur;
+    private Commande commande;
 
     public int getId() {
         return id;
@@ -15,19 +13,19 @@ public class LivraisonCadeau {
         this.id = id;
     }
 
-    public CommandeCad getCmdCad() {
-        return cmdCad;
-    }
-
-    public void setCmdCad(CommandeCad cmdCad) {
-        this.cmdCad = cmdCad;
-    }
-
     public User getLivreur() {
         return livreur;
     }
 
     public void setLivreur(User livreur) {
         this.livreur = livreur;
+    }
+
+    public Commande getCommande() {
+        return commande;
+    }
+
+    public void setCommande(Commande commande) {
+        this.commande = commande;
     }
 }

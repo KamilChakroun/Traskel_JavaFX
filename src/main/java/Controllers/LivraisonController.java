@@ -1,5 +1,12 @@
-package com.pi.traskel;
+package Controllers;
 
+import Entities.Commande;
+import Entities.Livraison;
+import Entities.Panier;
+import Entities.User;
+import Services.UpdateLiv;
+import com.pi.traskel.DBConnection;
+import Services.EmailSender;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -86,20 +93,22 @@ public class LivraisonController implements Initializable {
         List<Commande> allCommandes = new ArrayList<>();
 
         try (Connection con = DBConnection.getCon();
-             PreparedStatement st = con.prepareStatement("SELECT * FROM commande");
-             ResultSet rs = st.executeQuery()) {
+             PreparedStatement st = con.prepareStatement("SELECT * FROM commande WHERE statut = ?");
+        ) {
+            st.setString(1, "en Attente"); // Set the status condition
+            try (ResultSet rs = st.executeQuery()) {
+                while (rs.next()) {
+                    Commande commande = new Commande();
+                    commande.setId(rs.getInt("id"));
+                    commande.setAdresse(rs.getString("adresse"));
+                    commande.setStatut(rs.getString("statut"));
+                    commande.setDelai(rs.getString("delai"));
 
-            while (rs.next()) {
-                Commande commande = new Commande();
-                commande.setId(rs.getInt("id"));
-                commande.setAdresse(rs.getString("adresse"));
-                commande.setStatut(rs.getString("statut"));
-                commande.setDelai(rs.getString("delai"));
+                    Panier panier = getPanierByCommandeId(commande.getId());
+                    commande.setPanier(panier);
 
-                Panier panier = getPanierByCommandeId(commande.getId());
-                commande.setPanier(panier);
-
-                allCommandes.add(commande);
+                    allCommandes.add(commande);
+                }
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -290,7 +299,11 @@ public class LivraisonController implements Initializable {
                         "<li>Commande ID: " + selectedCommande.getId() + "</li>" +
                         "<li>Livreur: " + selectedLivreur.getNom() + " " + selectedLivreur.getPrenom() + "</li>" +
                         "</ul></body></html>";
-                EmailSender.sendEmail("Traskel",recipientEmail, subject, body);
+                EmailSender.sendEmail("Traskel", recipientEmail, subject, body);
+
+                // Refresh the ComboBox list
+                commandeCB.getItems().clear();
+                commandeCB.getItems().addAll(getAllCommandes());
 
                 afficherLivraisons();
             } catch (SQLException e) {
@@ -301,6 +314,7 @@ public class LivraisonController implements Initializable {
             errorLabel.setTextFill(Color.RED);
         }
     }
+
 
 
     private void updateCommandeStatus(int commandeId, String newStatus) {
@@ -323,7 +337,7 @@ public class LivraisonController implements Initializable {
             try {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Fxml/UpdateLivraison.fxml"));
                 Parent root1 = (Parent) fxmlLoader.load();
-                UpdateLivController updateLivController = fxmlLoader.getController();
+                UpdateLiv updateLivController = fxmlLoader.getController();
                 updateLivController.setLivraison(selectedLivraison);
                 Stage stage = new Stage();
                 stage.setTitle("Modifier Livraison");
@@ -350,16 +364,25 @@ public class LivraisonController implements Initializable {
         Livraison selectedLivraison = table.getSelectionModel().getSelectedItem();
 
         if (selectedLivraison != null) {
-            String query = "DELETE FROM livraisons WHERE id = ?";
             try {
                 con = DBConnection.getCon();
-                st = con.prepareStatement(query);
 
+                // Update the statut of associated Commande to "en Attente"
+                String updateCommandeQuery = "UPDATE commande SET statut = 'en Attente' WHERE id = ?";
+                st = con.prepareStatement(updateCommandeQuery);
+                st.setInt(1, selectedLivraison.getCommande().getId());
+                st.executeUpdate();
+
+                // Delete the Livraison
+                String deleteLivraisonQuery = "DELETE FROM livraisons WHERE id = ?";
+                st = con.prepareStatement(deleteLivraisonQuery);
                 st.setInt(1, selectedLivraison.getId());
-
                 st.executeUpdate();
 
                 afficherLivraisons();
+                // Refresh the ComboBox list
+                commandeCB.getItems().clear();
+                commandeCB.getItems().addAll(getAllCommandes());
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }

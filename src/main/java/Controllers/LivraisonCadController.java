@@ -1,4 +1,4 @@
-package com.pi.traskel;
+package Controllers;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;

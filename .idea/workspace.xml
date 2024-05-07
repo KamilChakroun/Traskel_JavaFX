@@ -5,14 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a3bd333-ee71-43b1-bd18-7a87f50cea66" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/DashboardController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/css/DashStyle.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/css/styless.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/CommandeCad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/CommandeCad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonCadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonCadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/UpdateLivController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pi/traskel/UpdateLivController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/Cadeau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/Cadeau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/Commande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/Commande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/CommandeCad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/CommandeCad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/EmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/EmailSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/Livraison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/Livraison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonCadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/LivraisonCadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonCadeau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/LivraisonCadeau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/LivraisonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/LivraisonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/Panier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/Panier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/UpdateLivController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/UpdateLiv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pi/traskel/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Livraisons.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Livraisons.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/LivraisonsCadeaux.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/LivraisonsCadeaux.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/UpdateLivraison.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/UpdateLivraison.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +103,8 @@
       <workItem from="1715004672875" duration="74000" />
       <workItem from="1715006718921" duration="2902000" />
       <workItem from="1715027573983" duration="2052000" />
+      <workItem from="1715038547506" duration="445000" />
+      <workItem from="1715039099708" duration="2339000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -116,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714437005374</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <option name="closed" value="true" />
+      <created>1715038631489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715038631489</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

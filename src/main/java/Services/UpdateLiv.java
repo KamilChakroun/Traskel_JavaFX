@@ -1,7 +1,9 @@
-package com.pi.traskel;
+package Services;
 
+import Entities.Livraison;
+import Entities.User;
+import com.pi.traskel.DBConnection;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -17,7 +19,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UpdateLivController {
+public class UpdateLiv {
 
     @FXML
     private Button confirmBtn;
