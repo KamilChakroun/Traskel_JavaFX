@@ -11,14 +11,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="581.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LivraisonController">
+<AnchorPane prefHeight="581.0" prefWidth="861.0" stylesheets="@../css/DashStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LivraisonController">
    <children>
       <VBox layoutX="39.0" layoutY="125.0" prefHeight="200.0" prefWidth="148.0" spacing="15.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir :" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Commande" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir :">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font></Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Commande">
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
             <ComboBox fx:id="commandeCB" prefWidth="150.0" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Livreur" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Livreur">
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
             <ComboBox fx:id="livreurCB" prefWidth="150.0" />
          </children>
       </VBox>
@@ -34,17 +43,29 @@
             <TableColumn fx:id="colLIV" prefWidth="147.2000732421875" text="Livreur" />
         </columns>
       </TableView>
-      <Label fx:id="mainLabel" alignment="CENTER" layoutX="283.0" layoutY="33.0" prefHeight="35.0" prefWidth="302.0" text="LIVRAISONS PRODUITS">
+      <Label fx:id="mainLabel" alignment="CENTER" layoutX="283.0" layoutY="33.0" prefHeight="35.0" prefWidth="302.0" style="-fx-text-fill: #e7e5e5;" text="LIVRAISONS PRODUITS">
          <font>
             <Font name="System Bold" size="24.0" />
          </font></Label>
       <ButtonBar layoutY="332.0" prefHeight="38.0" prefWidth="192.0">
         <buttons>
-          <Button fx:id="ajouterBtn" alignment="CENTER" minWidth="66.0" mnemonicParsing="false" onAction="#ajouterLivraison" prefHeight="38.0" text="Ajouter" />
-          <Button fx:id="supprimerBtn" mnemonicParsing="false" onAction="#supprimerLivraison" prefHeight="44.0" text="Supprimer" />
+          <Button fx:id="ajouterBtn" alignment="CENTER" minWidth="66.0" mnemonicParsing="false" onAction="#ajouterLivraison" prefHeight="38.0" text="Ajouter">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+          <Button fx:id="supprimerBtn" mnemonicParsing="false" onAction="#supprimerLivraison" prefHeight="44.0" text="Supprimer">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
         </buttons>
       </ButtonBar>
-      <Button fx:id="updateBtn" layoutX="71.0" layoutY="397.0" mnemonicParsing="false" onAction="#updateLivraison" prefHeight="38.0" prefWidth="83.0" text="Modifier" />
-      <Label fx:id="errorLabel" layoutX="14.0" layoutY="351.0" prefHeight="46.0" prefWidth="182.0" wrapText="true" />
+      <Button fx:id="updateBtn" layoutX="71.0" layoutY="397.0" mnemonicParsing="false" onAction="#updateLivraison" prefHeight="38.0" prefWidth="83.0" text="Modifier">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="errorLabel" layoutX="21.0" layoutY="447.0" prefHeight="61.0" prefWidth="182.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
    </children>
 </AnchorPane>

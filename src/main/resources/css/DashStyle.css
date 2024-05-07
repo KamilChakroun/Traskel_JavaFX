@@ -1,3 +1,8 @@
+.root {
+    -fx-background-color: #02030A;
+}
+
+
 /* Style pour la table */
 .table-view {
     -fx-background-color: #02030A; /* Couleur de fond */
@@ -29,17 +34,42 @@
 
 /* Style pour les lignes de la table */
 .table-row-cell {
-    -fx-background-color: #02030A; /* Couleur de fond */
+    -fx-background-color: #2e2d2d; /* Couleur de fond */
 }
 
-.button
-{
+.button {
     -fx-background-color : #05071F;
     -fx-text-fill : #e7e5e5;
 }
-.button:hover{
-    -fx-background-color : #10165F;
+
+.button#ajouterBtn {
+    -fx-background-color: #b01946;
 }
+
+.button#ajouterBtn:hover {
+    -fx-background-color: #ff7f7f;
+}
+
+.button#supprimerBtn {
+    -fx-background-color: #b01946;
+}
+
+.button#supprimerBtn:hover {
+    -fx-background-color: #ff7f7f;
+}
+
+.button#updateBtn {
+    -fx-background-color: #b01946;
+}
+
+.button#updateBtn:hover {
+    -fx-background-color: #ff7f7f;
+}
+
+.button:hover {
+    -fx-background-color: #10165F;
+}
+
 .button:pressed
 {
     -fx-background-color : #1620A1;
